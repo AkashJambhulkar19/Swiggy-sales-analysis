@@ -184,7 +184,7 @@ Open `dashboard/swiggy_dashboard.html` in Chrome, Firefox, or Edge.
 
 Built by **Akash Jambhulkar** .
 
-**LinkedIn:** [https://github.com/AkashJambhulkar19/Swiggy-sales-analysis.git]  
+**LinkedIn:** [www.linkedin.com/in/akash-jambhulkar-006532388]  
 **Email:** [akashjambhulkar197@gmail.com]
 
 ---
