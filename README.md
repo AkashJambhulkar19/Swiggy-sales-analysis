@@ -182,10 +182,10 @@ Open `dashboard/swiggy_dashboard.html` in Chrome, Firefox, or Edge.
 
 ## 👤 About
 
-Built by **Akash** as a portfolio project for Data Analyst job applications.
+Built by **Akash Jambhulkar** .
 
-**LinkedIn:** [Add your LinkedIn]  
-**Email:** [Add your email]
+**LinkedIn:** [https://github.com/AkashJambhulkar19/Swiggy-sales-analysis.git]  
+**Email:** [akashjambhulkar197@gmail.com]
 
 ---
 
