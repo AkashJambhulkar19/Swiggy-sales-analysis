@@ -1,0 +1,5 @@
+fiscal_year,revenue_cr,net_loss_cr,food_delivery_gov_cr,instamart_gov_cr,dineout_gov_cr,total_gov_cr,monthly_transacting_users_mn,restaurant_partners,delivery_partners,cities_food_delivery,instamart_cities,dark_stores,take_rate_pct,aov_food_rs,aov_instamart_rs
+FY2022,5705,-3629,13800,500,200,14500,8.0,130000,280000,500,8,200,18.5,380,280
+FY2023,8265,-3758,22000,3000,600,25600,11.0,170000,340000,580,25,400,20.2,410,350
+FY2024,11634,-1888,27000,8069,1400,36469,13.0,196000,390000,653,43,605,21.8,440,410
+FY2025,15200,-1100,32000,14500,2800,49300,15.5,220000,430000,700,55,750,22.5,465,450

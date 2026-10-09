@@ -1,0 +1,5 @@
+fiscal_year,swiggy_revenue_cr,zomato_revenue_cr,swiggy_net_loss_cr,zomato_net_loss_cr,swiggy_food_gov_cr,zomato_food_gov_cr,swiggy_qcommerce_gov_cr,zomato_qcommerce_gov_cr,swiggy_market_share_pct,zomato_market_share_pct,swiggy_mtu_mn,zomato_mtu_mn,swiggy_dark_stores,zomato_blinkit_stores
+FY2022,5705,4192,-3629,-1223,13800,15200,500,0,47,53,8.0,15,200,0
+FY2023,8265,7079,-3758,-971,22000,24500,3000,3200,45,55,11.0,19,400,400
+FY2024,11634,14148,-1888,351,27000,32000,8069,12000,44,56,13.0,21,605,791
+FY2025,15200,20176,-1100,1605,32000,38000,14500,22000,43,57,15.5,24,750,1000
