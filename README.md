@@ -10,7 +10,9 @@
 
 **An end-to-end sales analysis of Swiggy (NSE: SWIGGY) covering Food Delivery, Instamart, Swiggy One, and competitive positioning — FY2022 to FY2025**
 
-[📊 View Dashboard](#dashboard) · [🗄️ SQL Analysis](#sql-queries) · [📓 Notebooks](#notebooks) · [📈 Key Findings](#key-findings)
+### 👉 [🌐 VIEW LIVE INTERACTIVE DASHBOARD](https://akashjambhulkar19.github.io/Swiggy-sales-analysis/dashboard/swiggy_dashboard.html)
+
+[📊 Dashboard](#-dashboard) · [🗄️ SQL Analysis](#️-sql-queries) · [📓 Notebooks](#-notebooks) · [📈 Key Findings](#-key-findings)
 
 </div>
 
@@ -31,7 +33,9 @@ This project performs a comprehensive sales analysis of **Swiggy Limited** — I
 
 ## 📊 Dashboard
 
-Open `dashboard/swiggy_dashboard.html` in any browser — no server required.
+### 🔴 [Click here to view the Live Interactive Dashboard](https://akashjambhulkar19.github.io/Swiggy-sales-analysis/dashboard/swiggy_dashboard.html)
+
+> A **self-contained single HTML file** — no server needed. Open locally or view live via GitHub Pages.
 
 ### Dashboard Tabs:
 | Tab | Contents |
@@ -43,7 +47,22 @@ Open `dashboard/swiggy_dashboard.html` in any browser — no server required.
 | 💳 **Swiggy One** | Subscriber growth, Member vs Non-member AOV & order frequency |
 | ⚔️ **vs Zomato** | Revenue, GOV, market share, and quick-commerce head-to-head |
 
+### 📸 Chart Previews
+
+| National GOV Trend | Top Cities by GOV |
+|---|---|
+| ![GOV Trend](reports/food_delivery_charts/01_national_gov_trend.png) | ![Top Cities](reports/food_delivery_charts/02_top10_cities_gov.png) |
+
+| Tier-wise Breakdown | AOV vs Delivery Time |
+|---|---|
+| ![Tier GOV](reports/food_delivery_charts/03_tierwise_gov_stacked.png) | ![Scatter](reports/food_delivery_charts/04_aov_vs_delivery_scatter.png) |
+
+| YoY City Growth | Take Rate by Tier |
+|---|---|
+| ![Growth](reports/food_delivery_charts/05_yoy_growth_top10_cities.png) | ![Take Rate](reports/food_delivery_charts/06_take_rate_by_tier_boxplot.png) |
+
 ---
+
 
 ## 📁 Project Structure
 
