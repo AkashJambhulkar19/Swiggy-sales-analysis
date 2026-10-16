@@ -1,211 +1,131 @@
-# 🍕 Swiggy Sales Analysis — End-to-End Data Analyst Portfolio Project
+# Swiggy Sales Analysis
 
-<div align="center">
+A data analysis project examining Swiggy's business performance across Food Delivery, Instamart, and Swiggy One — covering FY2022 to FY2025 using publicly available financial data from the company's DRHP, IPO filings, and quarterly reports.
 
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=flat&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-3.0-150458?style=flat&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-7.1-3F4F75?style=flat&logo=plotly&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-PowerBI_Ready-217346?style=flat&logo=microsoftexcel&logoColor=white)
-
-**An end-to-end sales analysis of Swiggy (NSE: SWIGGY) covering Food Delivery, Instamart, Swiggy One, and competitive positioning — FY2022 to FY2025**
-
-### 👉 [🌐 VIEW LIVE INTERACTIVE DASHBOARD](https://akashjambhulkar19.github.io/Swiggy-sales-analysis/dashboard/swiggy_dashboard.html)
-
-[📊 Dashboard](#-dashboard) · [🗄️ SQL Analysis](#️-sql-queries) · [📓 Notebooks](#-notebooks) · [📈 Key Findings](#-key-findings)
-
-</div>
+**Live Dashboard:** [creative-beijinho-86c0c9.netlify.app](https://creative-beijinho-86c0c9.netlify.app)
 
 ---
 
-## 📌 Project Overview
+## Overview
 
-This project performs a comprehensive sales analysis of **Swiggy Limited** — India's leading food delivery and quick-commerce platform — using real publicly available financial data from Swiggy's DRHP, IPO filings, and quarterly investor reports.
+Swiggy (NSE: SWIGGY) is India's leading food delivery and quick-commerce platform. This project analyzes its growth trajectory, city-level performance, segment economics, and competitive position against Zomato.
 
-**Business Questions Answered:**
-- Which Indian cities drive the most food delivery revenue?
-- How explosive is Instamart's growth vs Food Delivery?
-- What does Swiggy's path to profitability look like?
-- How does Swiggy stack up against Zomato across all segments?
-- What impact does Swiggy One membership have on order behavior?
-
----
-
-## 📊 Dashboard
-
-### 🔴 [Click here to view the Live Interactive Dashboard](https://akashjambhulkar19.github.io/Swiggy-sales-analysis/dashboard/swiggy_dashboard.html)
-
-> A **self-contained single HTML file** — no server needed. Open locally or view live via GitHub Pages.
-
-### Dashboard Tabs:
-| Tab | Contents |
-|-----|----------|
-| 📊 **Overview** | KPI cards, Revenue vs Loss trend, Quarterly performance, Path to profitability |
-| 🍔 **Food Delivery** | Top 15 cities by GOV, AOV vs Delivery time scatter, User & partner growth |
-| 🛒 **Instamart** | GOV explosive growth, Dark store expansion, City-wise Instamart analysis |
-| 🏙️ **City Analysis** | Tier 1 vs Tier 2 vs Tier 3 GOV contribution over 4 years |
-| 💳 **Swiggy One** | Subscriber growth, Member vs Non-member AOV & order frequency |
-| ⚔️ **vs Zomato** | Revenue, GOV, market share, and quick-commerce head-to-head |
-
-### 📸 Chart Previews
-
-| National GOV Trend | Top Cities by GOV |
-|---|---|
-| ![GOV Trend](reports/food_delivery_charts/01_national_gov_trend.png) | ![Top Cities](reports/food_delivery_charts/02_top10_cities_gov.png) |
-
-| Tier-wise Breakdown | AOV vs Delivery Time |
-|---|---|
-| ![Tier GOV](reports/food_delivery_charts/03_tierwise_gov_stacked.png) | ![Scatter](reports/food_delivery_charts/04_aov_vs_delivery_scatter.png) |
-
-| YoY City Growth | Take Rate by Tier |
-|---|---|
-| ![Growth](reports/food_delivery_charts/05_yoy_growth_top10_cities.png) | ![Take Rate](reports/food_delivery_charts/06_take_rate_by_tier_boxplot.png) |
+**Questions this project answers:**
+- Which cities contribute the most to Swiggy's food delivery revenue?
+- How fast is Instamart growing relative to Food Delivery?
+- What does the path to profitability look like quarter by quarter?
+- How do Swiggy One members behave differently from non-members?
+- How does Swiggy compare to Zomato across all key metrics?
 
 ---
 
+## Dashboard
 
-## 📁 Project Structure
+The interactive dashboard has six sections — Overview, Food Delivery, Instamart, City Analysis, Swiggy One, and Swiggy vs Zomato. Built with Plotly, it runs entirely in the browser with no backend required.
+
+[View Dashboard](https://creative-beijinho-86c0c9.netlify.app)
+
+**Chart previews:**
+
+| | |
+|---|---|
+| ![National GOV Trend](reports/food_delivery_charts/01_national_gov_trend.png) | ![Top Cities by GOV](reports/food_delivery_charts/02_top10_cities_gov.png) |
+| ![Tier Breakdown](reports/food_delivery_charts/03_tierwise_gov_stacked.png) | ![AOV vs Delivery Time](reports/food_delivery_charts/04_aov_vs_delivery_scatter.png) |
+| ![City Growth Rates](reports/food_delivery_charts/05_yoy_growth_top10_cities.png) | ![Take Rate by Tier](reports/food_delivery_charts/06_take_rate_by_tier_boxplot.png) |
+
+---
+
+## Data
+
+National-level figures (revenue, GOV, net loss) come directly from Swiggy's DRHP and quarterly investor reports. City-level data is synthetic but calibrated to match the published national totals — this is clearly noted in the analysis.
+
+| Metric | FY2022 | FY2023 | FY2024 |
+|---|---|---|---|
+| Revenue (cr) | 5,705 | 8,265 | 11,634 |
+| Net Loss (cr) | 3,629 | 3,758 | 1,888 |
+| Food Delivery GOV (cr) | 13,800 | 22,000 | 27,000 |
+| Instamart GOV (cr) | 500 | 3,000 | 8,069 |
+| Dark Stores | 200 | 400 | 605 |
+| Monthly Users (mn) | 8 | 11 | 13 |
+
+Source: Swiggy DRHP (SEBI Filing, 2024), NSE Quarterly Reports
+
+---
+
+## Project Structure
 
 ```
 swiggy_sales_analysis/
-│
 ├── data/
-│   ├── raw/
-│   │   ├── swiggy_annual_financials.csv      # Real national figures (DRHP + filings)
-│   │   ├── swiggy_quarterly_results.csv      # Quarterly P&L (Q1FY24 to Q1FY27)
-│   │   ├── food_delivery_city_data.csv       # 26 cities × 4 fiscal years
-│   │   ├── instamart_city_data.csv           # 20 cities × 4 fiscal years
-│   │   ├── swiggy_one_membership.csv         # Monthly membership metrics
-│   │   └── competitor_comparison.csv         # Swiggy vs Zomato by year
-│   └── cleaned/
-│       └── swiggy_master_fy2024.csv          # Merged master dataset
-│
+│   ├── raw/                         # Six CSV datasets
+│   └── cleaned/                     # Merged master dataset
 ├── notebooks/
-│   ├── 02_food_delivery_analysis.py          # Food delivery EDA
-│   └── (additional notebooks)
-│
+│   └── 02_food_delivery_analysis.py # EDA with matplotlib and seaborn
 ├── sql/
-│   └── swiggy_business_questions.sql         # 20 SQL business queries
-│
+│   └── swiggy_business_questions.sql # 20 SQL queries
 ├── dashboard/
-│   └── swiggy_dashboard.html                 # 6-tab interactive dashboard
-│
+│   └── swiggy_dashboard.html        # Interactive Plotly dashboard
 ├── powerbi_data/
-│   └── swiggy_powerbi_ready.xlsx             # 8-sheet Power BI ready Excel
-│
-├── generate_data.py                          # Master data generation script
-├── generate_dashboard.py                     # Dashboard builder
-└── export_powerbi.py                         # Excel export script
+│   └── swiggy_powerbi_ready.xlsx    # Eight-sheet Excel for Power BI
+├── reports/
+│   ├── food_delivery_charts/        # Six saved chart images
+│   └── swiggy_insights_report.md   # Written analysis and recommendations
+├── generate_data.py                 # Generates all CSV datasets
+├── generate_dashboard.py            # Builds the HTML dashboard
+└── export_powerbi.py               # Exports data to Excel
 ```
 
 ---
 
-## 🔢 Real Data Used (Sources)
+## Key Findings
 
-| Metric | FY2022 | FY2023 | FY2024 |
-|--------|--------|--------|--------|
-| Revenue (₹ Cr) | 5,705 | 8,265 | 11,634 |
-| Net Loss (₹ Cr) | 3,629 | 3,758 | 1,888 |
-| Food Delivery GOV (₹ Cr) | 13,800 | 22,000 | 27,000 |
-| Instamart GOV (₹ Cr) | 500 | 3,000 | 8,069 |
-| Dark Stores | 200 | 400 | 605 |
-| Monthly Users (Mn) | 8 | 11 | 13 |
+**Food Delivery**
+- Bengaluru, Delhi NCR, and Mumbai together account for roughly 43% of national food delivery GOV
+- Tier 2 cities (Jaipur, Lucknow, Indore) are growing at 24–28% year-on-year, faster than most metro markets
+- Mumbai has the highest average order value at around Rs 490, while smaller cities like Patna average around Rs 300
 
-**Sources:** Swiggy DRHP (SEBI Filing Sep 2024) · NSE Quarterly Reports · Swiggy Investor Relations
+**Instamart**
+- GOV grew from Rs 500 cr in FY2022 to Rs 8,069 cr in FY2024 — roughly 29x in two years
+- Average delivery time in Tier 1 cities sits at 11–14 minutes, within the 15-minute target
+- Instamart reached contribution breakeven by mid-2026, validating the unit economics
 
-> ⚠️ **Data Disclaimer:** National-level metrics are sourced from Swiggy's real public filings. City-level breakdown is **realistic synthetic data** calibrated to match official national totals. This is standard practice in portfolio projects where granular data is not publicly available.
+**Swiggy One**
+- Members place orders about 4x more frequently per month than non-members
+- Member average order value (Rs 510) is 34% higher than non-members (Rs 380)
 
----
-
-## 🔍 Key Findings
-
-### 🍔 Food Delivery
-- **Bengaluru, Delhi NCR, Mumbai** together contribute **~43% of national food delivery GOV**
-- Tier 2 cities (Jaipur, Lucknow, Indore) show **24-28% YoY growth** — outpacing Tier 1 cities
-- Mumbai has the highest AOV (₹490) vs Patna at ₹300 — showing urban pricing premiums
-- Hyderabad has the **fastest delivery time** (~30 min) among Tier 1 cities
-
-### 🛒 Instamart
-- GOV grew from **₹500 Cr → ₹8,069 Cr in just 2 years** — a **29x surge**
-- Bengaluru leads with **95 dark stores** and 20% of national Instamart GOV
-- Average delivery time is **11-14 minutes** in Tier 1 cities (within 15-min promise)
-- By Q1 FY2027, Instamart reached **contribution breakeven** — unit economics validated
-
-### 💳 Swiggy One
-- Members order **4.2x more** per month than non-members
-- Member AOV (₹510) is **34% higher** than non-member AOV (₹380)
-- Subscription revenue at ₹99/month covers free delivery costs with a net margin
-
-### ⚔️ vs Zomato
-- Zomato turned profitable in FY2024 (₹351 Cr profit) while Swiggy remains loss-making
-- Swiggy holds **~44% food delivery market share** vs Zomato's 56%
-- Quick commerce battle: **Blinkit (791 stores) vs Instamart (605)** — Blinkit ahead but gap narrowing
+**vs Zomato**
+- Zomato turned profitable in FY2024 while Swiggy continues to narrow losses
+- Blinkit had 791 dark stores to Instamart's 605 by end of FY2024
+- Swiggy holds roughly 44% food delivery market share vs Zomato's 56%
 
 ---
 
-## 🗄️ SQL Queries
+## SQL Analysis
 
-The `sql/swiggy_business_questions.sql` file contains **20 business questions** covering:
-- Window functions: `RANK()`, `ROW_NUMBER()`, `LAG()`, `SUM() OVER`
-- CTEs for complex multi-step analysis
-- JOINs across multiple dimension tables
-- Subqueries for above-average comparisons
-- Aggregations: revenue by segment, tier, city, quarter
+The `sql/swiggy_business_questions.sql` file contains 20 queries covering window functions (`RANK`, `LAG`, `SUM OVER`), CTEs, multi-table joins, and subqueries. All queries are SQLite compatible.
 
 ---
 
-## 📓 Notebooks
+## Setup
 
-| Notebook | Analysis |
-|----------|----------|
-| `02_food_delivery_analysis.py` | City-wise GOV, AOV, delivery time, tier comparison |
-
----
-
-## 🚀 Setup & Run
-
-### Prerequisites
 ```bash
-pip install pandas plotly openpyxl
+pip install pandas plotly openpyxl matplotlib seaborn
+
+python generate_data.py       # creates all CSV files
+python generate_dashboard.py  # builds the HTML dashboard
+python export_powerbi.py      # exports Excel for Power BI
 ```
 
-### Generate Everything
-```bash
-# Step 1: Generate all CSV datasets
-python generate_data.py
+---
 
-# Step 2: Build interactive dashboard
-python generate_dashboard.py
+## Tools Used
 
-# Step 3: Export Power BI Excel
-python export_powerbi.py
-```
-
-### Open Dashboard
-Open `dashboard/swiggy_dashboard.html` in Chrome, Firefox, or Edge.
+Python 3.13, Pandas, Plotly, Matplotlib, Seaborn, SQL (SQLite), openpyxl
 
 ---
 
-## 🛠️ Tech Stack
+## About
 
-| Tool | Purpose |
-|------|---------|
-| **Python 3.13** | Core language |
-| **Pandas** | Data manipulation & cleaning |
-| **Plotly** | Interactive visualizations |
-| **SQLite / SQL** | Business query analysis |
-| **openpyxl** | Excel export for Power BI |
-| **Matplotlib / Seaborn** | Notebook-level charts |
+Made by Akash as a portfolio project for data analyst roles.
 
----
-
-## 👤 About
-
-Built by **Akash Jambhulkar** .
-
-**LinkedIn:** [www.linkedin.com/in/akash-jambhulkar-006532388]  
-**Email:** [akashjambhulkar197@gmail.com]
-
----
-
-*This is a portfolio/educational project. All company names and trademarks belong to their respective owners. Financial data is sourced from publicly available regulatory filings.*
+*Financial data sourced from publicly available regulatory filings. City-level breakdowns are synthetic but consistent with published national aggregates. This is not investment advice.*
